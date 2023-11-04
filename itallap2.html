@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Itallap</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/itallap.css" rel="stylesheet" />
+</head>
+
+
+
+<body> 
+
+	<div class="container common-bg">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/borito.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">GyrosCity</h1>
+								<h6 class="tm-site-description">Vásárosnamény</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Kezdőlap</a></li>
+							
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<main class="main-bg">
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Tel:(20) 597 6297</h2>
+				<p class="col-12 text-center">Add le rendelésed telefonon</p>
+			</header>
+		
+			<div class="row">
+				<div class="col-md-6 col-12 text-center">
+					<a href="itallap3.html" class="button">Alkoholmentes italok</a>
+				</div>
+				<div class="col-md-6 col-12 text-center">
+					<a href="itallap.html" class="button">Alkoholos italok</a>
+				</div>
+			</div>
+		</main>
+       
+
+		<footer class="tm-footer text-center">
+			<p>Copyright &copy; 2023 GyrosCity
+            
+            </a></p>
+		</footer>
+	</div>
+<style>
+.tm-nav-link {
+        font-size: 35px; /* Itt állíthatod be a gomb szövegméretét */
+        color: black; /* Itt állíthatod be a gomb szövegszínét */
+    }
+
+
+.common-bg {
+    background-color: #f0d2285e; /* Változtathatod az új háttérszínre itt */
+}
+
+.tm-section-title,
+.button {
+    color: rgb(235, 11, 11); /* Változtathatod az új szövegszínre itt */
+}
+
+
+
+.button {
+ display: inline-block;
+ padding: 12px 24px;
+ border: 1px solid #4f4f4f;
+ border-radius: 4px;
+ transition: all 0.2s ease-in;
+ position: relative;
+ overflow: hidden;
+ font-size: 19px;
+ color: black;
+ z-index: 1;
+}
+
+.button:before {
+ content: "";
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.25);
+ top: 100%;
+ width: 140%;
+ height: 180%;
+ background-color: rgba(0, 0, 0, 0.05);
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
+}
+
+.button:after {
+ content: "";
+ position: absolute;
+ left: 55%;
+ transform: translateX(-50%) scaleY(1) scaleX(1.45);
+ top: 180%;
+ width: 160%;
+ height: 190%;
+ background-color: #39bda7;
+ border-radius: 50%;
+ display: block;
+ transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+ z-index: -1;
+}
+
+.button:hover {
+ color: #ffffff;
+ border: 1px solid #39bda7;
+}
+
+.button:hover:before {
+ top: -35%;
+ background-color: #39bda7;
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+ top: -45%;
+ background-color: #39bda7;
+ transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+
+</style>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script> //animaciósmegjelnitő cucc
+		$(document).ready(function(){
+			// eltünik 
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+		
+	</script>
+</body>
+</html>

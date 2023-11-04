@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <a href="index.html" class="vissza">Vissza</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiszállítás információ</title>
+    <style>
+
+
+.vissza {
+	box-shadow:inset 0px -9px 0px -24px #e67a73;
+	background-color:#e4685d;
+	border-radius:4px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	font-style:italic;
+	padding:4px 28px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.vissza:hover {
+	background-color:#eb675e;
+}
+.vissza:active {
+	position:relative;
+	top:1px;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 5px;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: red;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-to-home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 9999;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Kiszállítással kapcsolatos információk</h1>
+    <p>Kedves Vendégeink!
+ 
+        Megrendelését az étterem a nyitvatartási időben tudja kiszállítani. A megrendelés szállítási ideje maximum 60-90 perc. Kérjük azonban, hogy a szállítási időt 5-10 perc erejéig kezelje rugalmasan! Rossz időjárási viszonyok esetén a késés a forgalom miatt természetes lehet. Ennek mértéke 10-20 perc. Ennél jelentősebb késés esetén az Étterem illetve a Futár természetesen tájékoztatja Önt. 
+       A III. díjzónába eső településekre csak szabad kapacitásunk függvényében tudunk kiszállítani, tekintettel a kiszállítási idő hosszára, ezért ezt illetően szíves megértésüket kérjük.
+       </p>
+    <ul>
+        <h1>Ahhoz, hogy a megrendelés leadhassa és a megrendelt árukat ki tudják szállítani a megfelelő címre az alábbi adatokat kell megadnia:</h1>
+        
+        <li>Vezeték és keresztnév</li>
+        <li>Telefonszám</li>
+        <li>Szállítási cím</li>
+        
+    </ul>
+    <p>A szállítási díj az étterem honlapján és a rendelt tételeket felsoroló blokkon is fel van tüntetve.
+        A termékek mellett található fotók szimbolikus jellegűek. A termékek mellett feltüntetett ár az adott termék bruttó vételára, amely az általános forgalmi adót is tartalmazza.
+        A megrendelhető termékek összetevői a termékek adatlapján tekinthetők meg.
+    
+        </p>
+    <p>A kiszállított ételt, amennyiben fél órán belül nem fogyasztják el, jellegének megfelelően kell tárolni!
+        Fogyasztás előtt ismételt hőkezelést igényel!
+        Kiszállítás mindennap 11:00-22:00 óráig, rendelésfelvétel 21:30 óráig elérhető.</p>
+    <h1>Fizetési lehetőségek 
+ 
+        A vételár a feltüntetett termékek melletti ár, melyek bruttó (Áfa-t is tartalmazó) áron kerülnek feltűntetésre. A következő fizetési lehetőségek, fizetési módok közül választhat:
+    </h1>
+        
+        <p>
+            - Fizetés Készpénzzel
+        </p>
+        <p>
+            - Fizetés Mobil terminállal
+        </p>
+        <p>
+            - Fizetés Bankkártyával
+        </p>
+        <p>
+            - Fizetés OTP SZÉP kártyával
+        </p>
+        <p>
+            - Fizetés K&H SZÉP kártyával
+        </p>
+        <p>
+            -Fizetés MBH SZÉP kártyával
+        </p>
+    <p>
+        Kiszállításnál bankkártyával és SZÉP kártyával is fizethetsz a helyszínen, ez esetben jelezd a rendelés leadásánál munkatársunknak, hogy a futárunk vigye magával a terminált.
+Áraink az ÁFÁ-t tartalmazzák!
+Az árváltozás jogát fent tartjuk!
+</p>
+    
+    <h1> Megrendelés lemondása </h1>
+<p> A megrendelést nem áll módjában lemondani. A rendelés személyre szabott, így ha lemondaná, akkor azzal a Bolt nem tudna mit kezdeni.
+    A Bolt fenntartja magának a jogot, hogy indokolt esetben elálljon a rendelés teljesítésétől (pl áramszünet, vagy egyéb szélsőséges időjárási viszonyok esetén). Ilyen esetben természetesen a Bolt értesíti Önt.
+    A Bolt által visszamondott rendelés és nem teljesített rendelés esetén amennyiben Ön már fizetett, úgy - a részletek tisztázása után - a Bolt az Ön által kifizetett összeget teljes mértékben visszatéríti, így Önt semmilyen esetben nem érheti kár.
+    FONTOS! A telefonon keresztül leadott rendelés esetén, legyen elérhető a megadott telefonszámon, szállítási címen.
+    Vitás esetekben a Ptk. szabályozásai mérvadók.
+    </p>
+    <h1>Adatvédelem</h1>
+    <p>
+        A rendeléshez szükséges néhány személyes adat megadása is. Csak olyan információkat kérünk Öntől a rendelése folyamán, amelyek feltétlenül fontosak ahhoz, hogy rendelése célba érjen. Telefonszámára azért van szükségünk, hogy az esetlegesen felmerülő kérdéseket is tisztázhassuk Önnel. Kérjük, ennek érdekében pontosan adja meg a kért adatokat!
+A megadott adatokat az adatvédelmi törvénynek megfelelően bizalmasan kezeljük, harmadik félnek nem adjuk át, és azokat csak saját céljainkra használjuk fel.
+Ez alól kivételt képeznek azok az információk, melyek az adott termék kézbesítéséhez vagy kiszállításához szükségesek.
+
+    </p>
+    <body>
+        <h1>Kiszállitás:</h1>
+        <table border="1">
+            <tr>
+                <th>Ahová kiszállítunk</th>
+                <th>Kiszállítási árak</th>
+            </tr>
+            <tr>
+                <td>Vásárosnamény
+                </td>
+                <td>340</td>
+            </tr>
+            <tr>
+                <td>Vitka
+                </td>
+                <td>340</td>
+            </tr>
+            <tr>
+                <td>Gergelyugornya
+                </td>
+                <td>560</td>
+            </tr>
+            <tr>
+                <td>Kisvarsány
+                </td>
+                <td>560</td>
+            </tr>
+            <!-- Itt folytathatod tovább a táblázatot a kívánt adatokkal és oszlopokkal -->
+
+            <tr>
+                <td style="color: red;">I.Zóna-min. rendelés:3900Ft</td>
+               
+                </td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>Olcsva
+                </td>
+                <td>680</td>
+            </tr>
+            <tr>
+                <td>Nagyvarsány
+                </td>
+                <td>760</td>
+            </tr>
+            <tr>
+                <td>Jánd
+                </td>
+                <td>760</td>
+            </tr>
+            <tr>
+                <td style="color: red;">II.Zóna-min. rendelés:4900Ft</td>
+               
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ilk
+                </td>
+                <td>1100</td>
+            </tr>
+            <tr>
+                <td>Perényi-tanya
+                </td>
+                <td>1100</td>
+            </tr>
+            <tr>
+                <td>Gyüre
+                </td>
+                <td>1100</td>
+            </tr>
+            <tr>
+                <td>Szabadság-tanya
+                </td>
+                <td>1100</td>
+            </tr>
+            <tr>
+                <td>Nagydobos
+                </td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Tákos
+                </td>
+                <td>1600</td>
+            </tr>
+            <tr>
+                <td>Pusztadobos
+                </td>
+                <td>1600</td>
+            </tr>
+            <tr>
+                <td>Gemzse
+                </td>
+                <td>1600</td>
+            </tr>
+            <tr>
+                <td>Aranyosapáti
+                </td>
+                <td>1600</td>
+            </tr>
+            <tr>
+                <td>Aranyosapáti
+                </td>
+                <td>1700</td>
+            </tr>
+            <tr>
+                <td>Nyírmada
+                </td>
+                <td>1700</td>
+            </tr>
+            <tr>
+                <td>Tiszaszalka
+                </td>
+                <td>1900</td>
+            </tr>
+            <tr>
+                <td>Csaroda
+                </td>
+                <td>1900</td>
+            </tr>
+            <tr>
+                <td style="color: red;">III.Zóna-min. rendelés:5900Ft</td>
+               
+                </td>
+                <td></td>
+                <tr>
+                    <td>Tiszavid
+                    </td>
+                    <td>2100</td>
+                    <tr>
+                        <td>Gulács
+                        </td>
+                        <td>2200</td>
+                        <tr>
+                            <td>Szabolcsbáka
+                            </td>
+                            <td>2300</td>
+                            <tr>
+                                <td>Vámosatya
+                                </td>
+                                <td>2300</td>
+                                <tr>
+                                    <td>Hetefejércse
+                                    </td>
+                                    <td>2500</td>
+                                    <tr>
+                                        <td>Rohod
+                                        </td>
+                                        <td>2600</td>
+                                        <tr>
+                                            <td>Gelénes
+                                            </td>
+                                            <td>2600</td>
+                                            <tr>
+                                                <td>Márokpapi
+                                                </td>
+                                                <td>2600</td>
+                                                <tr>
+                                                    <td>Tiszaadony
+                                                    </td>
+                                                    <td>2700</td>
+                                                    <tr>
+                                                        <td>Vaja
+                                                        </td>
+                                                        <td>2800</td>
+                                                        <tr>
+                                                            <td>Tarpa,gulács felé
+                                                            </td>
+                                                            <td>2800</td>
+                                                            <tr>
+                                                                <td>Beregsurány
+                                                                </td>
+                                                                <td>2900</td>
+                                                                <tr>
+                                                                    <td>Barabás
+                                                                    </td>
+                                                                    <td>3000</td>
+                                                                    <tr>
+                                                                        <td>Beregdaróc
+                                                                        </td>
+                                                                        <td>3200</td>
+                                                                        <tr>
+                                                                            
+                                                                                <td>Tiszakerecseny
+                                                                                </td>
+                                                                                <td>3600</td>
+                                                                                <tr>
+                                                                                    <td>Mátyus
+                                                                                    </td>
+                                                                                    <td>4300</td>
+                                                                                    <tr>
+                                                                                        <td>Lónya
+                                                                                        </td>
+                                                                                        <td>4900</td>
+        </table>
+    </body>
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+
+        }
+
+        
+    </script>
+</body>
+</html>
