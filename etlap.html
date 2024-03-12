@@ -586,22 +586,14 @@ hello there
 							<figcaption>
 								<h4 class="tm-gallery-title">Vega-burger</h4>
 								<p class="tm-gallery-description">Hamburger buci,
-									
-                                  Rántott sajt,
-Paradicsom,
-Paprika,
-Uborka,
-Panírozott hagymakarika,
-Majonéz,
-Kechup,
-Jégsaláta
+                                  Rántott sajt,Paradicsom,Paprika,Uborka,Panírozott hagymakarika,Majonéz,Kechup,Jégsaláta
 									</p>
 								<p class="tm-gallery-price">Ár: 1460Ft</p>
 							</figcaption>
 						</figure>
 					</article>
 
-				</div>
+				
 
 				
 				</div>
@@ -681,7 +673,7 @@ Jégsaláta
 						</figure>
 					</article>
 
-
+				</div>
 					
 
 				<!-- gallery page 4 - Hot-Dog -->
@@ -916,8 +908,6 @@ Jégsaláta
 
 				</div>
 
-				
-				</div>
 				<!-- gallery page 6 -sültek-->
 				<div id="tm-gallery-page-sültek" class="tm-gallery-page hidden">
 
@@ -954,21 +944,6 @@ Jégsaláta
 						</figure>
 					</article>
 
-				<!--
-
-				
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/Mexikói-csirkeszárny.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Mexikói csirkeszárny</h4>
-								<p class="tm-gallery-description"></p>
-								<p class="tm-gallery-price">Ár: 74Ft/1dkg</p>
-							</figcaption>
-						</figure>
-					</article>
--->
-
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
 							<img src="img/gallery/sult4.jpg" alt="Image" class="img-fluid tm-gallery-img" />
@@ -980,20 +955,6 @@ Jégsaláta
 						</figure>
 					</article>
 
-					<!--
-					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
-						<figure>
-							<img src="img/gallery/sult5.jpg" alt="Image" class="img-fluid tm-gallery-img" />
-							<figcaption>
-								<h4 class="tm-gallery-title">Borsos csirkemell csíkok</h4>
-								<p class="tm-gallery-description"></p>
-								<p class="tm-gallery-price">Ár: 104Ft/1dkg</p>
-							</figcaption>
-						</figure>
-					</article>
-
-
-				-->
 
 					<article class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
 						<figure>
@@ -2512,51 +2473,51 @@ Jégsaláta
 	</div>
 
 
-		</main>
-		
-		<button onclick="topFunction()" id="myBtn" title="FEL">&#129153;</button>
-		
+</main>
 
-		<script>
-		// Amikor a felhasználó görget, megjelenik vagy elrejtődik a gomb
-		window.onscroll = function() {scrollFunction()};
+<button onclick="topFunction()" id="myBtn" title="FEL">&#129153;</button>
+
+
+<script>
+// Amikor a felhasználó görget, megjelenik vagy elrejtődik a gomb
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	document.getElementById("myBtn").style.display = "block";
+  } else {
+	document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// Amikor a felhasználó rákattint a gombra, az oldal tetejére ugrik
+function topFunction() {
+  document.body.scrollTop = 0; // Safari
+  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
+}
+</script>
+
+<footer class="tm-footer text-center">
+	<p>Copyright &copy; 2023 GyrosCity
+	
+	</a></p>
+</footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script> //animaciósmegjelnitő cucc
+$(document).ready(function(){
+	// eltünik 
+	$('.tm-paging-link').click(function(e){
+		e.preventDefault();
 		
-		function scrollFunction() {
-		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("myBtn").style.display = "block";
-		  } else {
-			document.getElementById("myBtn").style.display = "none";
-		  }
-		}
-		
-		// Amikor a felhasználó rákattint a gombra, az oldal tetejére ugrik
-		function topFunction() {
-		  document.body.scrollTop = 0; // Safari
-		  document.documentElement.scrollTop = 0; // Chrome, Firefox, IE, Opera
-		}
-		</script>
-		
-		<footer class="tm-footer text-center">
-			<p>Copyright &copy; 2023 GyrosCity
-            
-            </a></p>
-		</footer>
-	</div>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script> //animaciósmegjelnitő cucc
-		$(document).ready(function(){
-			// eltünik 
-			$('.tm-paging-link').click(function(e){
-				e.preventDefault();
-				
-				var page = $(this).text().toLowerCase();
-				$('.tm-gallery-page').addClass('hidden');
-				$('#tm-gallery-page-' + page).removeClass('hidden');
-				$('.tm-paging-link').removeClass('active');
-				$(this).addClass("active");
-			});
-		});
-	</script>
+		var page = $(this).text().toLowerCase();
+		$('.tm-gallery-page').addClass('hidden');
+		$('#tm-gallery-page-' + page).removeClass('hidden');
+		$('.tm-paging-link').removeClass('active');
+		$(this).addClass("active");
+	});
+});
+</script>
 </body>
 </html>
