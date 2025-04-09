@@ -161,54 +161,128 @@ Gyros City
     
 <!-- étlap -->
 
-<h4 style="text-align: center; font-size: 30px;">Újdonságok</h4>
-<div id="menu" class="menu-container"></div>
-     <div class="menu-container">
-          
-          <div class="menu-item" onclick="redirectToFacebook()">
-               <div class="menu-image">
-                 <img src="images/munka1.jpg" alt="Kép 1">
-               </div>
-               <div class="menu-details">
-                 <h3>Munkalehetőség</h3>
-                 <p>Kattints IDE ,és olvasd el a részleteket!</p>
-                 <span></span>
-               </div>
-             </div>
-             
-             <script>
-               function redirectToFacebook() {
-                 window.location.href = "https://www.facebook.com/gyroscity/posts/pfbid02gQs8pz4LpHqUdAFMrsdTe93h7R5xuci6zsPvc2dWo4cFJrxYCdomdmmjrXdJzfrzl";
-               }
-             </script>
-             
-      
+<h4 class="section-title">Újdonságok</h4>
+<!--
+<div class="menu-container">
+  <div class="menu-item" onclick="redirectToFacebook()">
+    <div class="menu-image">
+      <img src="images/munka1.jpg" alt="Munkalehetőség">
+    </div>
+    <div class="menu-details">
+      <h3>Munkalehetőség</h3>
+      <p>Kattints IDE ,és olvasd el a részleteket!</p>
+    </div>
+  </div>
+-->
+  <div class="menu-item">
+    <div class="menu-image">
+      <img src="images/gesztenye.jpg" alt="Gesztenyepüré">
+    </div>
+    <div class="menu-details">
+      <h3>Gesztenyepüré</h3>
+      <span>980 Ft</span>
+    </div>
+  </div>
 
-          
-          <!-- További menüelemek itt -->
-          <div class="menu-item">
-            <div class="menu-image">
-              <img src="images/gesztenye.jpg" alt="Kép 1">
-            </div>
-            <div class="menu-details">
-              <h3>Gesztenyepüré</h3>
-              <p></p>
-              <span>980Ft</span>
-            </div>
-          </div>
-               <!-- További menüelemek itt -->
-               <div class="menu-item">
-                    <div class="menu-image">
-                      <img src="images/win.jpg" alt="Kép 1">
-                    </div>
-                    <div class="menu-details">
-                      <h3>Nyereményjáték</h3>
-                      <p>Látogass el Facebook-oldalunkra a részletekért!</p>
-                      <span></span>
-                    </div>
-                  </div>
-<!--Továábi-->
+  <div class="menu-item">
+    <div class="menu-image">
+      <img src="images/win.jpg" alt="Nyereményjáték">
+    </div>
+    <div class="menu-details">
+      <h3>Nyereményjáték</h3>
+      <p>Látogass el Facebook-oldalunkra a részletekért!</p>
+    </div>
+  </div>
 </div>
+
+<style>
+  .section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 40px 0 20px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 15px;
+  }
+
+  .menu-item {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    cursor: pointer;
+  }
+
+  .menu-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+  .menu-details {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .menu-details h3 {
+    margin: 10px 0;
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  .menu-details p {
+    font-size: 1rem;
+    color: #666;
+    margin: 0 0 10px;
+  }
+
+  .menu-details span {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.1rem;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-10px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  @media (max-width: 768px) {
+    .menu-item {
+      width: 90%;
+    }
+  }
+</style>
+
+<script>
+  function redirectToFacebook() {
+    window.location.href = "https://www.facebook.com/gyroscity/posts/pfbid02gQs8pz4LpHqUdAFMrsdTe93h7R5xuci6zsPvc2dWo4cFJrxYCdomdmmjrXdJzfrzl";
+  }
+</script>
+
 
 
 
