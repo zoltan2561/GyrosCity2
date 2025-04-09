@@ -24,6 +24,77 @@ html {
 *::after {
   box-sizing: inherit;
 }
+.product-wrapper {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.product-wrapper:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tm-gallery-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-wrapper:hover .tm-gallery-img {
+  transform: scale(1.05);
+}
+
+figcaption {
+  padding: 15px;
+  text-align: center;
+}
+
+.tm-gallery-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tm-gallery-description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+  min-height: 80px;
+}
+
+.tm-gallery-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #e67e22;
+  margin-top: 10px;
+}
+
+span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tm-gallery-item {
+  animation: fadeUp 0.8s ease-in-out;
+}
 
 .container {
   width: 100%;
